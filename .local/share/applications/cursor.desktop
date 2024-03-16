@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Cursor
+Type=Application
+Comment=GPT-baked fork of VScodium.
+Exec=/home/me/.local/bin/cursor-0.29.1-build-2403027twmz0d1t-x86_64.AppImage
+Path=/home/me/.local/share/Cursor
+Icon=/home/me/.local/share/icons/Cursor.ico
+Categories=Development;
+X-AppInstall-Package=cursor-0.29.1-build-2403027twmz0d1t-x86_64.AppImage

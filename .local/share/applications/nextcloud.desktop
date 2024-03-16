@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Nextcloud
+Type=Application
+Comment=dumpster-of-things
+Exec=/home/me/.local/bin/Nextcloud-3.4.1-x86_64.AppImage --background
+Path=/home/me/.local/share/Nextcloud
+Icon=Nextcloud.png
+Categories=Internet;
+X-AppInstall-Package=Nextcloud-3.4.1-x86_64.AppImage

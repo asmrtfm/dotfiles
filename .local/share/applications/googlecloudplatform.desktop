@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=googleCloudPlatform
+Comment=googleCloudPlatform (Ice SSB)
+Exec=chromium-browser --app=https://cloud.google.com/appengine --class=ICE-SSB-googlecloudplatform
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/googlecloudplatform.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlecloudplatform
+StartupNotify=true

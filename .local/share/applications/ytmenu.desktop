@@ -1,0 +1,44 @@
+[Desktop Entry]
+Version=1.0
+NoDisplay=true
+Name=ytmenu
+Type=Application
+Comment=Various YTDL-related utilities.
+Icon=youtube-dl
+Terminal=false
+StartupNotify=false
+Path=/home/me/
+Exec=/home/me/bin/ytdlazy
+Categories=Other;
+Actions=default;adstractor;audio;level1show;securitynow
+X-AppInstall-Package=ytmenu
+
+[Desktop Action default]
+Name=Default
+Comment=For posterity's sake and/or when too depressed to get out of bed.
+Icon=youtube-dl
+Exec=/home/me/bin/ytdlazy -n
+
+[Desktop Action adstractor]
+Name=Advertisement
+Comment=Initiate Adstraction.
+Icon=applications-engineering
+Exec=/home/me/bin/ytdl-ad
+
+[Desktop Action audio]
+Name=Audio
+Comment=YTDL Audio
+Icon=solfege
+Exec=/home/me/bin/ytdlaud
+
+[Desktop Action level1show]
+Name=Level1Show
+Comment=Download an episode of the Level1Show, including the one-tab and sources therein.
+Icon=applications-engineering
+Exec=/home/me/bin/ytdlazy -L1
+
+[Desktop Action securitynow]
+Name=Security Now
+Comment=Download an episode of Security Now and its show notes.
+Icon=applications-engineering
+Exec=/home/me/bin/ytdlazy -SN

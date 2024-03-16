@@ -1,0 +1,50 @@
+{
+  "global": {
+    "opened": [
+      {
+        "index": 6, 
+        "group": 2, 
+        "timestamp": 1671771516, 
+        "filename": "/home/me/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+      }
+    ], 
+    "closed": [
+      {
+        "index": 7, 
+        "group": 2, 
+        "timestamp": 1671771949, 
+        "filename": "/home/me/Music/YTDLA/20221015/20210819.ColorsII/.ytdla/20210819.Turbulent.info.json"
+      }, 
+      {
+        "index": 6, 
+        "group": 2, 
+        "timestamp": 1671771492, 
+        "filename": "/home/me/.config/sublime-text-3/Packages/User/FileHistory.sublime-settings"
+      }
+    ]
+  }, 
+  "d41d8cd98f00b204e9800998ecf8427e": {
+    "opened": [
+      {
+        "index": 6, 
+        "group": 2, 
+        "timestamp": 1671771516, 
+        "filename": "/home/me/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+      }
+    ], 
+    "closed": [
+      {
+        "index": 7, 
+        "group": 2, 
+        "timestamp": 1671771949, 
+        "filename": "/home/me/Music/YTDLA/20221015/20210819.ColorsII/.ytdla/20210819.Turbulent.info.json"
+      }, 
+      {
+        "index": 6, 
+        "group": 2, 
+        "timestamp": 1671771492, 
+        "filename": "/home/me/.config/sublime-text-3/Packages/User/FileHistory.sublime-settings"
+      }
+    ]
+  }
+}

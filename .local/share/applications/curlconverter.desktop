@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=curlConverter
+Comment=curlConverter (Ice SSB)
+Exec=brave --app=https://curlconverter.com/ --class=ICE-SSB-curlconverter
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/curlconverter.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-curlconverter
+StartupNotify=true

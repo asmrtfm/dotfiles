@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Jobber
+Comment=Jobber (Ice SSB)
+Exec=brave --app=https://secure.getjobber.com/today --class=ICE-SSB-jobber
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/jobber.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-jobber
+StartupNotify=true

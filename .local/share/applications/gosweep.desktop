@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=go&sweep
+Comment=go&sweep (Ice SSB)
+Exec=chromium-browser --auto-open-devtools-for-tabs --app=https://fieldtech.sweepandgo.com/ --class=ICE-SSB-gosweep --user-data-dir=/home/me/.local/share/ice/profiles/gosweep
+X-ICE-SSB-Profile=gosweep
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/gosweep.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-gosweep
+StartupNotify=true
+Path=

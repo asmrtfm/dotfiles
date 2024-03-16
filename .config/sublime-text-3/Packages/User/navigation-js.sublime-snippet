@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+// index.js
+export { default as Sidebar } from './Sidebar';
+export { default as Navbar } from './Navbar';
+]]></content>
+	<tabTrigger>bar</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

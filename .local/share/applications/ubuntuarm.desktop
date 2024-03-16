@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=ubuntu.ARM
+Comment=ubuntu.ARM (Ice SSB)
+Exec=chromium-browser --app=https://ubuntu.com/download/server/arm --class=ICE-SSB-ubuntuarm
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/ubuntuarm.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-ubuntuarm
+StartupNotify=true

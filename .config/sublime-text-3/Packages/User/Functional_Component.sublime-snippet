@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+import React, { PropTypes } from 'react';
+
+const ${1:Component} = ({ className }) => {
+    return (
+        ${2}
+    );
+};
+
+${1:Component}.displayName = '${1:Component}';
+
+${1:Component}.propTypes = {
+    className: PropTypes.string,
+};
+
+export default ${1:Component};
+
+]]></content>
+<tabTrigger>rfc</tabTrigger>
+</snippet>

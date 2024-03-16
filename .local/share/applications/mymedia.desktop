@@ -1,0 +1,45 @@
+[Desktop Entry]
+for AUDz and VIDz
+
+
+Version=1.0
+NoDisplay=true
+Name=MyMedia
+Type=Application
+Comment=sshfs.
+Exec=/home/me/bin/ytdlazy
+Terminal=false
+StartupNotify=false
+Path=/home/me/Videos/YTDL
+Icon=youtube-dl
+Categories=Other;
+Actions=default;adstractor;audio;dlq
+X-AppInstall-Package=ytmenu
+
+[Desktop Action default]
+Name=Default
+Comment=For posterity's sake... when you're too depressed to get out of bed.
+Exec=/home/me/bin/ytdlazy
+Icon=youtube-dl
+Path=/home/me/Videos/YTDL
+
+[Desktop Action adstractor]
+Name=initiate adstraction
+Comment=Adstractor.
+Exec=/home/me/bin/ytdl-ad
+Icon=applications-engineering
+Path=/home/me/Videos/YTDL
+
+[Desktop Action audio]
+Name=audio mode
+Comment=YTDL Audio
+Exec=/home/me/bin/ytdlaud
+Icon=solfege
+Path=/home/me/Videos/YTDLA
+
+[Desktop Action dlq]
+Name=dlq
+Comment=Add something to the download que.
+Exec=/home/me/bin/dlq
+Icon=applications-other
+Path=/home/me/Desktop

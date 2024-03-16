@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0.8
+Type=Application
+Name=USBImager
+Comment=Write image files to USB devices
+Exec=usbimager
+Icon=usbimager
+Terminal=false
+StartupNotify=true
+Categories=Application;System;
+Path=

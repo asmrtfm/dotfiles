@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=HAR-to-cURL
+Comment=har-to-curl (Ice SSB)
+Exec=brave --app=https://mattcg.github.io/har-to-curl/ --class=ICE-SSB-hartocurl --user-data-dir=/home/me/.local/share/ice/profiles/hartocurl
+X-ICE-SSB-Profile=hartocurl
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/hartocurl.png
+Categories=GTK;Development;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hartocurl
+StartupNotify=true

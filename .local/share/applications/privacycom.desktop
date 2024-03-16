@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=privacy.com
+Comment=privacy.com (Ice SSB)
+Exec=chromium-browser --app=https://privacy.com/ --class=ICE-SSB-privacycom
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/privacycom.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-privacycom
+StartupNotify=true

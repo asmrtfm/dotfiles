@@ -1,0 +1,53 @@
+[Desktop Entry]
+Version=1.0
+Name=googleKeep
+Comment=googleKeep (Ice SSB)
+Exec=chromium-browser --app=https://keep.google.com/u/1/ --class=ICE-SSB-googlekeep --user-data-dir=/home/me/.local/share/ice/profiles/googlekeep
+X-ICE-SSB-Profile=googlekeep
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/googlekeep.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlekeep
+StartupNotify=true
+Actions=dumpsterofthings;asmrtfm;ralphsghost
+X-AppInstall-Package=googledrive
+
+[Desktop Action dumpsterofthings]
+Name=dumpster-of-things
+Comment=open as google user 4.
+Exec=chromium-browser --app=https://keep.google.com/u/4/ --class=ICE-SSB-googlekeep --user-data-dir=/home/me/.local/share/ice/profiles/googlekeep
+X-ICE-SSB-Profile=googlekeep
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlekeep
+StartupNotify=true
+
+[Desktop Action asmrtfm]
+Name=asmrtfm
+Comment=open as google user 0.
+Exec=chromium-browser --app=https://keep.google.com/u/0/ --class=ICE-SSB-googlekeep --user-data-dir=/home/me/.local/share/ice/profiles/googlekeep
+X-ICE-SSB-Profile=googlekeep
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlekeep
+StartupNotify=true
+
+
+[Desktop Action ralphsghost]
+Name=ralphearnhardtsghost
+Comment=open as google user 1.
+Exec=chromium-browser --app=https://keep.google.com/u/1/ --class=ICE-SSB-googlekeep --user-data-dir=/home/me/.local/share/ice/profiles/googlekeep
+X-ICE-SSB-Profile=googlekeep
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlekeep
+StartupNotify=true

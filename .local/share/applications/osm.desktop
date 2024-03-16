@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=OSM
+Comment=OSM (Ice SSB)
+Exec=chromium-browser --app=https://www.openstreetmap.org/ --class=ICE-SSB-osm
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/osm.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-osm
+StartupNotify=true

@@ -1,0 +1,58 @@
+[Desktop Entry]
+Version=1.0
+Name=rotate
+Type=Application
+Comment=Rotate and Refresh Displays.
+#Exec=/home/me/bin/Rot8 'reset'
+Exec=xfce4-display-settings
+Terminal=false
+StartupNotify=false
+Icon=computer
+Categories=Other;
+Actions=refresh;previous;next;blank;normal;left;right;inverted
+
+[Desktop Action refresh]
+Name=Reset
+Comment=Refresh and reset display.
+Exec=/home/me/bin/Rot8 'refresh'
+Icon=notification-display-brightness-full
+
+[Desktop Action previous]
+Name=Previous
+Comment=Rotate 90 degrees counter-clockwise.
+Exec=/home/me/bin/Rot8 'prev'
+Icon=object-rotate-left
+
+[Desktop Action next]
+Name=Next
+Comment=Rotate 90 degrees clockwise.
+Exec=/home/me/bin/Rot8 'next'
+Icon=object-rotate-right
+
+[Desktop Action blank]
+Name=--- --- ---
+Icon=dropboxstatus-blank
+
+[Desktop Action normal]
+Name=Normal
+Comment=Default 0 degree orientation (Landscape Normal).
+Exec=/home/me/bin/Rot8 'normal'
+Icon=go-home
+
+[Desktop Action left]
+Name=Left
+Comment=Jump to 270 degree orientation (Portrait Left).
+Exec=/home/me/bin/Rot8 'left'
+Icon=go-first
+
+[Desktop Action right]
+Name=Right
+Comment=Jump to 90 degree orientation (Portrait Right).
+Exec=/home/me/bin/Rot8 'right'
+Icon=go-last
+
+[Desktop Action inverted]
+Name=Inverted
+Comment=Inversion (180 degrees) from current orientation.
+Exec=/home/me/bin/Rot8 'invert'
+Icon=go-jump-rtl

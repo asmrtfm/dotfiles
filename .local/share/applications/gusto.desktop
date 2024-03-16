@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=gusto
+Comment=gusto (Ice SSB)
+Exec=chromium-browser --app=https://app.gusto.com/ --class=ICE-SSB-gusto
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/gusto.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-gusto
+StartupNotify=true

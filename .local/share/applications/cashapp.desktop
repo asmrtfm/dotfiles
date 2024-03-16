@@ -1,0 +1,16 @@
+[Desktop Entry]
+X-SnapInstanceName=chromium
+Version=1.0
+Name=cashApp
+Comment=cashApp
+Exec=chromium-browser --app=https://cash.app/verify/5v9gg7l6xz9mv4fdq4otq3es7 --class=cashapp --user-data-dir=/home/me/.local/share/ice/profiles/cashapp
+#X-ICE-SSB-Profile=cashapp
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/cashapp.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=cashapp
+StartupNotify=true
+#Path=

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+${1:Dipset}() { cat <<EOF
+NAME:
+   \${0##*\/}
+USAGE:
+   \`\${0##*\/} [-OPTIONS] <INPUT>\`
+DESCRIPTION:
+   #description
+OPTIONAL PARAMETERS:
+   -h,         Show this information.
+    --help
+   -,          ...
+    --
+
+EOF
+	exit \${1:-0}
+}
+[[ "\$1" != +(\-)@([hH])?([eE][lL][pP]) ]] || ${1:Dipset} \${@:2}
+]]></content>
+	<tabTrigger>usage</tabTrigger>
+	<scope>source.shell.bash</scope>
+</snippet>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ytdl-ad
+Comment=Adstraction.
+Exec=/home/me/bin/ytdl-ad
+Icon=applications-engineering
+Path=/home/me/Videos/YTDL
+Terminal=false
+StartupNotify=false

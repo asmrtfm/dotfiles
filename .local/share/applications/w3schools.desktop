@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+X-MultipleArgs=false
+Name=W3schools
+Comment=W3schools
+Exec=chromium-browser --app=https://w3schools.com --class=ICE-SSB-w3schools
+Icon=/home/me/.local/share/ice/w3schools.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-w3schools
+StartupNotify=true
+X-AppInstall-Package=w3schools
+#Exec=/snap/chromium/2082/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=mmpbkpaogikiiahonaheogjllnobgmoj
+#Icon=chrome-mmpbkpaogikiiahonaheogjllnobgmoj-Default
+#StartupWMClass=crx_mmpbkpaogikiiahonaheogjllnobgmoj

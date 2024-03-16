@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=petPharm
+Comment=petPharm (Ice SSB)
+Exec=chromium-browser --app=https://www.petmartpharmacy.com/account/ --class=ICE-SSB-petpharm
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/petpharm.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-petpharm
+StartupNotify=true

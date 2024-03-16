@@ -1,0 +1,20 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=Disney+
+Comment=Disney+ (Ice SSB)
+Terminal=false
+Type=Application
+Exec=chromium-browser --app=https://www.disneyplus.com/home --class=ICE-SSB-disney
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/disney.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-disney
+StartupNotify=true
+X-AppInstall-Package=disney
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=mbjafbmjpcimpkkihihoideiofnoalmh
+#Icon=chrome-mbjafbmjpcimpkkihihoideiofnoalmh-Default
+#StartupWMClass=crx_mbjafbmjpcimpkkihihoideiofnoalmh

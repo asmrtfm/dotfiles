@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=BigSendersClub
+Comment=BigSendersClub (Ice SSB)
+Exec=chromium-browser --app=https://nc.dumpster-of-things.xyz/index.php/apps/spreed/ --class=ICE-SSB-bigsendersclub
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/bigSenders.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-bigsendersclub
+StartupNotify=true
+Path=

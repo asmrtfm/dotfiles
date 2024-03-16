@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=regex101
+Comment=regex101 (Ice SSB)
+Exec=chromium-browser --app=https://regex101.com --class=ICE-SSB-regex --user-data-dir=/home/me/.local/share/ice/profiles/regex
+X-ICE-SSB-Profile=regex
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/regex.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-regex
+StartupNotify=true

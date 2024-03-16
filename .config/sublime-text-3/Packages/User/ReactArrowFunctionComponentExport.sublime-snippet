@@ -1,0 +1,11 @@
+<snippet><!--react arrow function component export-->
+	<content><![CDATA[
+import React from 'react'
+const = () => { return ( <${1:div}>${2:}</${1:div}> ) }
+export default
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rafce</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

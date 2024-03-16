@@ -1,0 +1,63 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=Hulu
+Comment=Hulu (Ice SSB)
+Exec=chromium-browser --app=https://www.hulu.com/app --class=ICE-SSB-hulu
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/hulu.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hulu
+StartupNotify=true
+X-AppInstall-Package=hulu
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=epffkfffophpagfbbklffindaiconkmc
+#Icon=chrome-epffkfffophpagfbbklffindaiconkmc-Default
+#StartupWMClass=crx_epffkfffophpagfbbklffindaiconkmc
+Actions=Home;Movies;TV;MyStuff
+
+[Desktop Action Home]
+Name=Home
+Exec=chromium-browser --app=https://www.hulu.com/app/ --class=ICE-SSB-hulu
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hulu
+StartupNotify=true
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=epffkfffophpagfbbklffindaiconkmc --app-launch-url-for-shortcuts-menu-item=https://www.hulu.com/app/
+
+[Desktop Action Movies]
+Name=Movies
+Exec=chromium-browser --app=https://www.hulu.com/app/hub/movies --class=ICE-SSB-hulu
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hulu
+StartupNotify=true
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=epffkfffophpagfbbklffindaiconkmc --app-launch-url-for-shortcuts-menu-item=https://www.hulu.com/app/hub/movies
+
+[Desktop Action TV]
+Name=TV
+Exec=chromium-browser --app=https://www.hulu.com/app/hub/tv --class=ICE-SSB-hulu
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hulu
+StartupNotify=true
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=epffkfffophpagfbbklffindaiconkmc --app-launch-url-for-shortcuts-menu-item=https://www.hulu.com/app/hub/tv
+
+[Desktop Action MyStuff]
+Name=MyStuff
+Exec=chromium-browser --app=https://www.hulu.com/my-stuff --class=ICE-SSB-hulu
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hulu
+StartupNotify=true
+#Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --profile-directory=Default --app-id=epffkfffophpagfbbklffindaiconkmc --app-launch-url-for-shortcuts-menu-item=https://www.hulu.com/my-stuff

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Google Voice
+Comment=Google Voice (Ice SSB)
+Exec=chromium-browser --app=https://voice.google.com --class=ICE-SSB-googlevoice --user-data-dir=/home/me/.local/share/ice/profiles/googlevoice
+X-ICE-SSB-Profile=googlevoice
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/googlevoice.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googlevoice
+StartupNotify=true

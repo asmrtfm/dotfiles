@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=ORS
+Comment=ORS (Ice SSB)
+Exec=chromium-browser --app=https://openrouteservice.org/ --class=ICE-SSB-ors
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/ors.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-ors
+StartupNotify=true

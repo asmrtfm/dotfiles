@@ -1,0 +1,19 @@
+[Desktop Entry]
+X-SnapInstanceName=brave
+Version=1.0
+Name=firebase
+Comment=firebase console
+#env BAMF_DESKTOP_FILE_HINT=/home/me/.local/share/applications/chromium_chromium.desktop /snap/bin/chromium --app=https://console.firebase.google.com/u/1/project/night-district-1/overview --class=firebase
+#Exec=chromium-browser --app=https://console.firebase.google.com/u/1/project/night-district-1/overview --class=firebase
+Exec=/usr/bin/brave-browser --app=https://console.firebase.google.com/u/1/project/night-district-1/overview --class=firebase
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/firebase.png
+Categories=GTK;Network;Development;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=firebase
+StartupNotify=true
+X-AppInstall-Package=firebase
+
+Path=

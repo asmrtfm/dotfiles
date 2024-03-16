@@ -1,0 +1,15 @@
+[Desktop Entry]
+X-SnapInstanceName=chromium
+Version=1.0
+Name=Amazon
+Comment=Amazon
+Exec=chromium-browser --app=https://www.amazon.com/gp/css/homepage.html --class=amazon
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/amazon.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=amazon
+StartupNotify=true
+#Path=

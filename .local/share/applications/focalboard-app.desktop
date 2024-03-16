@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Focalboard
+Type=Application
+Comment="Focalboard Desktop"
+Exec=/home/me/.local/share/focalboard-app/focalboard-app
+Path=/home/me/.local/share/focalboard-app
+Icon=/home/me/.local/share/focalboard-app/pack/static/favicon.svg
+Categories=Office;
+X-AppInstall-Package=focalboard-app

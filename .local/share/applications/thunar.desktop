@@ -1,0 +1,76 @@
+[Desktop Entry]
+Name=Thunar File Manager
+Comment=Browse the filesystem with the file manager
+GenericName=File Manager
+Exec=thunar %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+MimeType=inode/directory;
+
+# vi:set encoding=UTF-8:
+
+Actions=home;desktop;documents;downloads;music;pictures;projects;videos;golang;basche
+
+[Desktop Action home]
+Name=Home
+Comment=Home directory.
+Exec=thunar %F /home/me
+#Path=/home/me
+
+[Desktop Action desktop]
+Name=Desktop
+Comment=Desktop directory.
+Exec=thunar %F /home/me/Desktop
+#Path=/home/me/Desktop
+
+[Desktop Action documents]
+Name=Documents
+Comment=Documents directory.
+Exec=thunar %F /home/me/Documents
+#Path=/home/me/Documents
+
+[Desktop Action downloads]
+Name=Downloads
+Comment=Downloads directory.
+Exec=thunar %F /home/me/Downloads
+#Path=/home/me/Downloads
+
+[Desktop Action music]
+Name=Music
+Comment=Music directory.
+Exec=thunar %F /home/me/Music
+#Path=/home/me/Music
+
+[Desktop Action pictures]
+Name=Pictures
+Comment=Pictures directory.
+Exec=thunar %F /home/me/Pictures
+#Path=/home/me/Pictures
+
+[Desktop Action projects]
+Name=Projects
+Comment=Projects directory.
+Exec=thunar %F /home/me/Projects
+#Path=/home/me/Projects
+
+[Desktop Action videos]
+Name=Videos
+Comment=Videos directory.
+Exec=thunar %F /home/me/Videos
+#Path=/home/me/Videos
+
+[Desktop Action golang]
+Name=GolangDir
+Comment=Golang directory.
+Exec=thunar %F /home/me/.go
+#Path=/home/me/.go
+
+[Desktop Action basche]
+Name=Basche
+Comment=Basche directory.
+Exec=thunar %F /home/me/.Basche
+#Path=/home/me/.Basche
+

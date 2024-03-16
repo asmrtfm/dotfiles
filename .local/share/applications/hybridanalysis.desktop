@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=HybridAnalysis
+Comment=HybridAnalysis (Ice SSB)
+Exec=chromium-browser --app=https://hybrid-analysis.com/ --class=ICE-SSB-hybridanalysis --user-data-dir=/home/me/.local/share/ice/profiles/hybridanalysis
+X-ICE-SSB-Profile=hybridanalysis
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/hybridanalysis.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-hybridanalysis
+StartupNotify=true

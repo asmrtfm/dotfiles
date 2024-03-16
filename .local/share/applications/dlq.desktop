@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=dlq
+Comment=Add something to the download que.
+Exec=/home/me/bin/dlq
+Icon=applications-other
+Path=/home/me/Desktop
+Terminal=false
+StartupNotify=false
+Name[en_US]=dlq

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Desktop
+GenericName=DesktopSettings
+Comment=Set desktop background and menu and icon behavior
+Icon=preferences-desktop-wallpaper
+OnlyShowIn=XFCE;
+TryExec=DesktopSettings
+Exec=xfdesktop-settings
+Path=/home/me
+Actions=NewShortcut;
+Categories=DesktopSettings;GTK;Settings;Utility;X-XFCE-PersonalSettings;X-XFCE-SettingsDialog;XFCE;
+Keywords=Desktop;
+StartupNotify=true
+
+[Desktop Action NewShortcut]
+Name=Desktop
+Exec=DesktopSettings

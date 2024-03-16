@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\#for ((${1:a}=1;${1:a}<=\$#;${1:a}++)); do
+for((;${1:a}++<\$#;)){ echo "\${!${1:a}}" ; } ; }
+	case "\${!${1:a}}" in
+	\-opt*) [[ "\${!${1:a}}" == *\=* ]] || ((++${1:a})) ; OPT="\${!${1:a}/*\=/}" ;;
+	*) continue
+	esac
+done
+]]></content>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.shell.bash</scope>
+</snippet>

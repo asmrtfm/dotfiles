@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+static propTypes = {
+    ${1:prop}: PropTypes.${2:string},
+};
+]]></content>
+<tabTrigger>rpts</tabTrigger>
+</snippet>

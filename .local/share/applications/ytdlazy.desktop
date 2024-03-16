@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ytdlazy
+Comment=For posterity's sake... when you're too depressed to get out of bed.
+Exec=/home/me/bin/ytdlazy
+Icon=youtube-dl
+Path=/home/me/Videos/YTDL
+Terminal=false
+StartupNotify=false
+Name[en_US]=ytdlazy

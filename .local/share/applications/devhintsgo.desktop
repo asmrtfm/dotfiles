@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=devhints - Go
+Comment=devhints - Go (Ice SSB)
+Exec=chromium-browser --app=https://devhints.io/go --class=ICE-SSB-devhintsgo
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/devhintsgo.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-devhintsgo
+StartupNotify=true

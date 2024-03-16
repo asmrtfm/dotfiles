@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Paypal
+Comment=Paypal (Ice SSB)
+Exec=chromium-browser --app=https://paypal.com --class=ICE-SSB-paypal --user-data-dir=/home/me/.local/share/ice/profiles/paypal
+X-ICE-SSB-Profile=paypal
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/paypal.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-paypal
+StartupNotify=false
+Path=

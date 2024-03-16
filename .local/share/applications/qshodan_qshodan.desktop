@@ -1,0 +1,10 @@
+[Desktop Entry]
+X-SnapInstanceName=qshodan
+Type=Application
+Icon=/snap/qshodan/196/snap/gui/qshodan.png
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/qshodan_qshodan.desktop /snap/bin/qshodan
+Name=qShodan
+Comment=
+Path=
+Terminal=false
+StartupNotify=true

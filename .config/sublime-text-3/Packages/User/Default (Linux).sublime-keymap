@@ -1,0 +1,25 @@
+[
+	{ "keys": ["alt+shift+h"],		"command": "toggle_side_bar" },
+	{ "keys": ["f11"],				"command": "toggle_full_screen" },
+	{ "keys": ["shift+f11"],		"command": "toggle_distraction_free" },
+	{ "keys": ["ctrl+shift+c"],		"command": "toggle_fold_comments" },
+	{ "keys": ["ctrl+f11"], 		"command": "toggle_chromeless", "context":
+		[
+			{ "key": "chromeless.replace_default_fs_shortcut", "operator": "equal", "operand": false }
+		]
+	},
+	{ "keys": ["ctrl+shift+t"],		"command": "open_recently_closed_file", "args": {"action": "open_latest_closed"} },
+    { "keys": ["alt+t"],			"command": "open_recently_closed_file" },
+    { "keys": ["ctrl+alt+shift+t"],	"command": "open_recently_closed_file", "args": {"current_project_only": false} },
+    { "keys": ["right"],			"command": "open_recently_closed_file", "args": {"action": "quick_open_current_entry"},
+      "context": [
+        { "key": "overlay_visible" },
+        { "key": "file_history_overlay_visible" },
+        { "key": "following_text", "operator": "regex_match", "operand": "^$" }
+    ]},
+    { "keys": ["ctrl+delete"],		"command": "open_recently_closed_file", "args": {"action": "delete_current_entry"},
+      "context": [
+        { "key": "overlay_visible" },
+        { "key": "file_history_overlay_visible" }
+    ]}
+]

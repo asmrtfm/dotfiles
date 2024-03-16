@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FL Studio 21
+Exec=env WINEPREFIX="/home/me/snap/flstudio/common/.wine" wine C:\\\\users\\\\Public\\\\Desktop\\\\FL\\ Studio\\ 21.lnk
+Type=Application
+StartupNotify=true
+Path=/home/me/snap/flstudio/common/.wine/dosdevices/c:/Program Files/Image-Line/FL Studio 21
+Icon=985E_FL64.0
+StartupWMClass=fl64.exe

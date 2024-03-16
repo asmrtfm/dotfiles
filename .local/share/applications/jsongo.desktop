@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=json2go
+Comment=json2go (Ice SSB)
+Exec=chromium-browser --app=https://mholt.github.io/json-to-go/ --class=ICE-SSB-jsongo
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/jsongo.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-jsongo
+StartupNotify=true

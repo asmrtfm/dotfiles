@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>author</key>
+  <string>Fernando L. Garcia Bermudez</string>
+  <key>name</key>
+  <string>Desert Night</string>
+  <key>settings</key>
+  <array>
+    <dict>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#333333</string>
+        <key>caret</key>
+        <string>#AD5C5C</string>
+        <key>foreground</key>
+        <string>#BEBEBE</string>
+        <key>lineHighlight</key>
+        <string>#404040</string>
+        <key>selection</key>
+        <string>#1A1A1AAA</string>
+        <key>selectionBorder</key>
+        <string>#222222</string>
+        <key>inactiveSelection</key>
+        <string>#1A1A1A66</string>
+        <key>highlight</key>
+        <string>#FFBB9166</string>
+        <key>highlightForeground</key>
+        <string></string>
+        <key>findHighlight</key>
+        <string>#FFBB91</string>
+        <key>findHighlightForeground</key>
+        <string>#000000</string>
+        <key>guide</key>
+        <string>#FFFFFF11</string>
+        <key>activeGuide</key>
+        <string>#FFFFFF66</string>
+        <key>stackGuide</key>
+        <string>#FFFFFF22</string>
+        <key>bracketsForeground</key>
+        <string>#F88D57</string>
+        <key>bracketsOptions</key>
+        <string>underline</string>
+        <key>bracketContentsForeground</key>
+        <key>bracketContentsOptions</key>
+        <key>tagsForeground</key>
+        <string>#F88D57CC</string>
+        <key>tagsOptions</key>
+        <string>stippled_underline</string>
+        <key>gutter</key>
+        <key>gutterForeground</key>
+        <string>#555555</string>
+      </dict>
+    </dict>
+      <key>name</key>
+      <string>Comment</string>
+      <key>scope</key>
+      <string>comment</string>
+        <string>#607080</string>
+      <string>Constants</string>
+      <string>constant, string, entity.name.constant</string>
+        <string>#AD8787</string>
+      <string>String special characters</string>
+      <string>constant.character.escape, constant.other.placeholder, punctuation.definition.string</string>
+        <string>#AD8787AA</string>
+      <string>Language built-ins</string>
+      <string>support, variable.language, constant.language</string>
+        <string>#A8ACCB</string>
+      <string>Control keywords</string>
+      <string>keyword.control</string>
+        <string>#C88282CC</string>
+      <string>Operators</string>
+      <string>keyword.operator</string>
+        <string>#888888</string>
+      <string>Punctuation</string>
+      <string>punctuation.accessor, punctuation.separator, punctuation.separator.continuation, punctuation.terminator, punctuation.definition.tag</string>
+      <string>Storage</string>
+      <string>storage</string>
+        <key>fontStyle</key>
+        <string>bold</string>
+      <string>Namespaces</string>
+      <string>entity.name.namespace</string>
+      <string>Classes</string>
+      <string>entity.name, entity.other.inherited-class</string>
+        <string>#95B7BFDD</string>
+      <string>Class members</string>
+      <string>variable.other</string>
+        <string>#95B7BFAA</string>
+      <string>Function declarations/definitions</string>
+      <string>entity.name.function</string>
+        <string>#D3E0A6CF</string>
+      <string>Function calls</string>
+      <string>variable.function</string>
+        <string>#D3E0A699</string>
+      <string>Function arguments</string>
+      <string>variable.parameter</string>
+        <string>#D3E0A666</string>
+      <string>Tags</string>
+      <string>entity.name.tag</string>
+        <string>#696969</string>
+      <string>Tag attribute</string>
+      <string>entity.other.attribute-name</string>
+        <string>#F88D5799</string>
+      <string>Invalid</string>
+      <string>invalid</string>
+        <string>#EE3232</string>
+      <string>diff.inserted</string>
+      <string>markup.inserted</string>
+        <string>#769976</string>
+      <string>diff.changed</string>
+      <string>markup.changed</string>
+        <string>#877699</string>
+      <string>diff.deleted</string>
+      <string>markup.deleted</string>
+        <string>#997676</string>
+  </array>
+</dict>
+</plist>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!--
+	{"color": "#BBD97BBD"},
+		{"color": "#BBD96BBD"},
+		{"color": "#B0BD6BBD"},
+		{"color": "#B0B56BBD"},
+		{"color": "#B0B5BBD1"},
+		{"color": "#B1B1ABD1"},
+		{"color": "#BBD1CAF3"},
+		{"color": "#BBD1C5"},
+		{"color": "#8189C666"},
+		{"color": "#81C666"}
+-->
+	<key>name</key>
+	<string>Coffe At Midnas</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#242114</string><!--
+				<string>#181409</string>
+				-->
+				<key>caret</key>
+				<string>#B99C6C66</string>
+				<key>foreground</key>
+				<string>#998969EF</string>
+				<key>invisibles</key>
+				<string>#27213389</string>
+				<key>lineHighlight</key>
+				<string>#211418</string>
+				<key>selection</key>
+				<string>#14181100</string>
+				<key>selectionBorder</key>
+				<string>#21181400</string>
+				<key>selectionForeground</key>
+				<string>#A999E9A9</string>
+				<key>findHighlight</key>
+				<string>#812118A0</string>
+				<key>findHighlightForeground</key>
+				<string>#D8B891B3</string>
+				<key>activeGuide</key>
+				<string>#9D550FB0</string>
+				<key>bracketsForeground</key>
+				<string>#99AF14B9</string>
+				<key>bracketsOptions</key>
+				<string>foreground</string>
+				<key>bracketContentsForeground</key>
+				<string>#AF8933FA</string>
+				<key>bracketContentsOptions</key>
+				<string>foreground underline</string>
+				<key>tagsOptions</key>
+				<string>stippled_underline</string>
+			</dict>
+		</dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+				<string>#393633</string>
+			<string>String</string>
+			<string>string</string>
+				<string>#B0B5BBD1</string><!--
+				<string>#BBD1CAF3</string>
+				<string>#895433</string>
+			<string>Number</string>
+			<string>constant.numeric</string>
+				<string>#B96321E3</string>
+			<string>Built-in constant</string>
+			<string>constant.language</string>
+				<string>#894518</string>
+			<string>User-defined constant</string>
+			<string>constant.character, constant.other</string>
+				<string>#E09666B9</string>
+			<string>Variable</string>
+			<string>variable</string>
+				<key>fontStyle</key>
+				<string></string>
+			<string>Keyword</string>
+			<string>keyword</string>
+				<string>#B38927B3</string>
+			<string>Keyword Operator</string>
+			<string>keyword.operator</string>
+				<string>#818945CE</string>
+			<string>JavaScript Dollar</string>
+			<string>variable.other.dollar.only.js</string>
+				<string>#8E8121</string>
+			<string>Storage</string>
+			<string>storage</string>
+				<string>#814527</string>
+			<string>Storage type</string>
+			<string>storage.type</string>
+				<string>italic</string>
+				<string>#B97227EE</string>
+			<string>Entity name</string>
+			<string>entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)</string>
+				<string>bold italic</string>
+				<string>#895433</string><!--
+				<string>#BBD97BBD</string>
+				<string>#E0AF00</string>
+			<string>Class name</string>
+			<string>entity.name.class</string>
+				<string>underline</string>
+				<string>#B6B3B933</string>
+			<string>Inherited class</string>
+			<string>entity.other.inherited-class</string>
+				<string>italic underline</string>
+				<string>#E0AF6333</string>
+			<string>Function name</string>
+			<string>entity.name.function</string>
+				<string>bold</string>
+				<string>#BD8972DB</string>
+			<string>Function argument</string>
+			<string>variable.parameter</string>
+				<string>#C46C39EF</string><!--
+				<string>#C46C39EF</string>
+			<string>Language variable</string>
+			<string>variable.language</string>
+				<string>#C66633F3</string>
+			<string>Tag name</string>
+			<string>entity.name.tag</string>
+				<string>#CB7227E3</string>
+			<string>Tag attribute</string>
+			<string>entity.other.attribute-name</string>
+				<string>#BBD97BBD</string><!--
+				<string>#8972F666</string>
+				<string>#E6C1D9</string>
+				<string>#997281</string>
+			    -->
+			<string>Function call</string>
+			<string>variable.function</string>
+				<string>#8189C666</string><!--
+				<string>#81C666  </string>
+				<string>#BB8972DB</string>
+			<string>Library function</string>
+			<string>support.function</string>
+				<string>#BC8139CB</string>
+			<string>Library constant</string>
+			<string>support.constant</string>
+				<string>#CD8945</string>
+			<string>Library class/type</string>
+			<string>support.type, support.class</string>
+			<string>Library variable</string>
+			<string>support.other.variable</string>
+			<string>Invalid</string>
+			<string>invalid</string>
+				<string>#CD5F43</string>
+				<string>#F8F8F0</string>
+			<string>Invalid deprecated</string>
+			<string>invalid.deprecated</string>
+				<string>#AE81FF</string>
+			<string>JSON String</string>
+			<string>meta.structure.dictionary.json string.quoted.double.json</string>
+				<string>#E7C387</string>
+			<string>diff.header</string>
+			<string>meta.diff, meta.diff.header</string>
+				<string>#735533</string>
+			<string>Extra: Diff From</string>
+			<string>meta.diff.header.from-file</string>
+				<string>#E78C8760</string>
+				<string>#E78C8700</string>
+			<string>Extra: Diff To</string>
+			<string>meta.diff.header.to-file</string>
+				<string>#E78C8740</string>
+				<string>#E78C87</string>
+			<string>diff.deleted</string>
+			<string>markup.deleted</string>
+				<string>#47180460</string>
+			<string>diff.inserted</string>
+			<string>markup.inserted</string>
+				<string>#A8B20E</string>
+				<string>#8F990D18</string>
+			<string>diff.changed</string>
+			<string>markup.changed</string>
+				<string>#E78C8720</string>
+			<string>constant.numeric.line-number.find-in-files - match</string>
+			<string>entity.name.filename</string>
+				<string>#CDA443</string>
+			<string>message.error</string>
+				<string>#F84A33</string>
+	</array>
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	"rules":
+	[
+		
+	]
+}
+	<string>Coffe At Midnight</string>
+				<string>#242114AF</string><!--
+				<string>#242114</string>
+				<string>#181411AF</string>
+				<string>#998169EF</string>
+				<string>#81214281</string>
+				<string>#D8B891D3</string>
+				<string>#A9BFD3F3</string>
+				<string>#393633C0</string>
+				<string>#D3B36981</string><!--
+				<string>#42635499</string>
+				<string>#B0B5BBD1</string.
+				<string>#B96321C3</string>
+				<string>#894518CF</string>
+				<string>#E09666C9</string>
+				<string>#A39989A3</string>
+				<string>#544263A0</string><!--
+				<string>#425469AF</string>
+				<string>#C6D3B999</string>
+				<string>#B9A6B6D9</string>
+				<string>#A3BA6C99</string><!--
+				<script>#DF8972EF</string>
+				<script>#9989666FL</string>
+				<string>#BFACBA42</string>
+				<string>#BD8972DB</string><!--
+				<string>#BB8972DB</string><!--
+				<string>#8189C666</string>
+				<string>#AE81FFC0</string>

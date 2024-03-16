@@ -1,0 +1,15 @@
+[Desktop Entry]
+X-SnapInstanceName=youtubemusic
+Version=1.0
+Name=YouTubeMusic
+Comment=Youtube Music
+#Exec=chromium-browser --app=https://music.youtube.com --class=ICE-SSB-youtubemusic --user-data-dir=/home/me/.local/share/ice/profiles/youtubemusic
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/chromium_chromium.desktop /snap/bin/chromium --app=https://music.youtube.com --class=youtubemusic --user-data-dir=/home/me/.local/share/ice/profiles/youtubemusic
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/youtubemusic.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=youtubemusic
+StartupNotify=true

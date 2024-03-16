@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Poe
+Exec=/snap/bin/chromium --profile-directory=Default --app-id=gabodgbmieebkjkpdlfnnfbjldgadkpg
+Icon=chrome-gabodgbmieebkjkpdlfnnfbjldgadkpg-Default
+StartupWMClass=crx_gabodgbmieebkjkpdlfnnfbjldgadkpg
+Hidden=true
+

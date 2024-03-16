@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Joplin
+GenericName=notebook
+Comment=
+Categories=Utility;
+Type=Application
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/joplin-desktop_joplin-desktop.desktop /snap/bin/joplin-desktop %u
+Icon=
+Terminal=false
+NoDisplay=false

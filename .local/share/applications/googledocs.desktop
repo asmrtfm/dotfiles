@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=googledocs
+Comment=googledocs (Ice SSB)
+Exec=chromium-browser --app=https://docs.google.com/document/u/3/ --class=ICE-SSB-googledocs
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/googledocs.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-googledocs
+StartupNotify=true

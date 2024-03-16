@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+while read ${1:line} ; do
+	#things
+done < ${2:<([ -t 0 ] || cat - ; ... )}
+]]></content>
+	<tabTrigger>while</tabTrigger>
+	<scope>source.shell.bash</scope>
+</snippet>

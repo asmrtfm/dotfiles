@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// Navbar.jsx
+import React from 'react';
+
+const Navbar = () => {
+	return (
+		<div>${1:Navbar}</div>
+	)
+}
+
+export default Navbar
+]]></content>
+	<tabTrigger>nav</tabTrigger>
+	<scope>source.jsx</scope>
+</snippet>

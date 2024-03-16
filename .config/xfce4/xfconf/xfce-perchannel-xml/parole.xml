@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="parole" version="1.0">
+  <property name="video" type="empty">
+    <property name="videosink" type="empty"/>
+  </property>
+  <property name="parole" type="empty">
+    <property name="plugins" type="string" value="parole-mpris2.so;parole-notify.so;tray-icon.so"/>
+  </property>
+  <property name="subtitles" type="empty">
+    <property name="font" type="string" value="Satanic Participants 18"/>
+  </property>
+  <property name="window" type="empty">
+    <property name="maximized" type="bool" value="false"/>
+    <property name="width" type="int" value="946"/>
+    <property name="height" type="int" value="565"/>
+  </property>
+  <property name="audio" type="empty">
+    <property name="volume" type="int" value="80"/>
+  </property>
+  <property name="folders" type="empty">
+    <property name="last-used-media" type="string" value="/home/me/Videos/.parsnipz"/>
+  </property>
+  <property name="playlist" type="empty">
+    <property name="show-playlist" type="bool" value="true"/>
+    <property name="repeat" type="bool" value="false"/>
+    <property name="remove-duplicates" type="bool" value="true"/>
+    <property name="play-opened-files" type="bool" value="false"/>
+    <property name="remember-playlist" type="bool" value="true"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="tray" type="empty">
+      <property name="remember-quit-action" type="bool" value="false"/>
+    </property>
+  </property>
+</channel>

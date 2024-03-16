@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+import React, { PropTypes } from 'react';
+import { injectIntl, intlShape } from 'react-intl';
+
+const ${1:Component} = ({ intl }) => {
+    const { formatMessage } = intl;
+
+    return (
+        ${2}
+    );
+};
+
+${1:Component}.displayName = '${1:Component}';
+
+${1:Component}.propTypes = {
+    intl: intlShape.isRequired,
+};
+
+export { ${1:Component} };
+
+export default injectIntl(${1:Component});
+
+]]></content>
+<tabTrigger>rfci</tabTrigger>
+</snippet>

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=MetroPCS
+Comment=MetroPCS (guest pay)
+Exec=env BAMF_DESKTOP_FILE_HINT=/home/me/.local/share/applications/chromium_chromium.desktop /snap/bin/chromium --app=https://www.metrobyt-mobile.com/guestpay/landing --class=metropcs --user-data-dir=/home/me/.local/share/ice/profiles/metropcs
+X-ICE-SSB-Profile=metropcs
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/metropcs.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-metropcs
+StartupNotify=true
+Path=

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=rapidTables
+Comment=rapidTables (Ice SSB)
+Exec=firefox --class ICE-SSB-rapidtables --profile /home/me/.local/share/ice/firefox/rapidtables --no-remote https://www.rapidtables.com/
+IceFirefox=rapidtables
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/rapidtables.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-rapidtables
+StartupNotify=true

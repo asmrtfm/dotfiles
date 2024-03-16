@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=The Go Playground
+Comment=The Go Playground (Ice SSB)
+Exec=chromium-browser --app=https://go.dev/play/ --class=ICE-SSB-thegoplayground
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/thegoplayground.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-thegoplayground
+StartupNotify=true

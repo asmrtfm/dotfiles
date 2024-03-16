@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=KrogerBank
+Comment=KrogerBank (Ice SSB)
+Exec=chromium-browser --app=https://portal.cardaccesssite.com/web/KPFperm/login --class=ICE-SSB-krogerbank --user-data-dir=/home/me/.local/share/ice/profiles/krogerbank
+X-ICE-SSB-Profile=krogerbank
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/KrogerBank.png
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-krogerbank
+StartupNotify=true
+Path=

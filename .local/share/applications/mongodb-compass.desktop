@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=MongoDB Compass
+Type=Application
+Comment=The MongoDB GUI
+Exec=mongodb-compass %U
+Icon=mongodb-compass
+Categories=Development;
+X-AppInstall-Package=mongodb-compass
+Path=

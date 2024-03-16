@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="accessibility" version="1.0">
+  <property name="MouseKeys" type="bool" value="false">
+    <property name="Delay" type="int" value="140"/>
+    <property name="Interval" type="int" value="18"/>
+    <property name="TimeToMax" type="int" value="100"/>
+  </property>
+  <property name="FindCursor" type="bool" value="true"/>
+  <property name="SlowKeys" type="bool" value="false">
+    <property name="Delay" type="int" value="69"/>
+  </property>
+  <property name="BounceKeys" type="bool" value="false">
+    <property name="Delay" type="int" value="72"/>
+  </property>
+</channel>

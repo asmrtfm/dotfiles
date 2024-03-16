@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=linode
+Comment=linode (Ice SSB)
+Exec=chromium-browser --app=https://cloud.linode.com/linodes --class=ICE-SSB-linode
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/me/.local/share/ice/linode.ico
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=ICE-SSB-linode
+StartupNotify=true

@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Poe
+Exec=/opt/brave.com/brave/brave-browser "--profile-directory=Profile 2" --app=https://poe.com/ --app-class=Poe
+Icon=/home/me/.local/share/icons/Poe.svg
+StartupWMClass=Poe
