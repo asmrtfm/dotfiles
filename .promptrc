@@ -1,0 +1,24 @@
+### PROMPT(PS1) REGENERATOR (AFTER EVERY CMD):
+function _update_ps1() {
+
+  ##ExitStatusCode
+  local ESC="$?"
+  # `   "why sprinkle diamonds on everything i eat?   `
+
+  ##PromptSectionDelimiter
+  local PSD='\[\e[0m\]'
+  # `   first of all,   `
+
+  # `   because it's the most ballin shit   `
+  # `    you can do with ya food;   `
+  local -i n i
+  for n in {0,1} ; do for i in {0..7} ; do
+	Clr[$(((10*n)+i))]='\[\e['"$n;3${i}m"'\]'
+  done ; done
+
+  _1() { PS1="${Clr[11]}[${Clr[1]}${ESC}${Clr[11]}] ${Clr[3]}\$ ${Clr[15]}\W ${Clr[13]}❱${Clr[11]}❱${Clr[15]}❱  $PSD" ; }
+  _0() { PS1="${Clr[2]}\$ ${Clr[15]}\W ${Clr[12]}❱${Clr[6]}❱${Clr[14]}❱  $PSD" ; }
+  # `   but more importantly,   `
+  _$((ESC!=0?1:0))
+  # `   'cause it make my dooky twankle."   `
+}

@@ -1,0 +1,29 @@
+### Handles everything:
+for path in /{,s{,nap/},usr/{,s,local/{,s,go/}},${HOME:1}/{,{.local,.pub-cache,go}/}}bin /usr/{share/fslint/fslint,include/d,lib/ldc,games} ; do [[ ! -d "$path" ]] || PATH="$PATH:$path" ; done
+
+### [ GOLANG ]
+## deprecated version(in my case v1.13)-centric. 
+#[[ ! -e /usr/lib/go ]] || export GOROOT="$(realpath /usr/lib/go)"
+#
+## go version >=~ 1.16 :
+PATH+=":/usr/local/go/bin"
+#
+## Seemingly, version agnostic
+[[ ! -d ~/go ]] || export GOPATH=~/go
+[[ ! -d $GOPATH/bin ]] || export GOBIN=$GOPATH/bin
+PATH+=$GOBIN
+###
+
+### [ Misc ]
+#/opt/john
+
+## Quit playin... (rm games from PATH) (* kept as example of removing paths which are being set by default somewhere and you don't feel like tracking it down)
+#PATH="$(echo "${PATH//\:/$'\n'}" | awk '!a[$0]++' | awk '/games/{ next; }; {print $0}' | tr $'\n' \:)"
+#[[ "${PATH}" != *':' ]] || PATH="${PATH:: -1}"
+#export PATH="${PATH}"
+
+## "google-chrome" executable for android-studio/flutter
+CHROME_EXECUTABLE=/snap/bin/chromium
+
+## Finalize/Depduplicate ${PATH}
+export PATH="$(echo "${PATH//\:/$'\n'\:}" | awk '!a[$0]++' | tr -d $'\n')"

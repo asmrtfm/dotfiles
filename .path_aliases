@@ -1,0 +1,4 @@
+export ghub=~/.src/github
+export asmrtfm=~/.src/github/asmrtfm
+export dumpster=~/.src/github/dumpster-of-things
+export NightDistrict=~/.src/github/Night-District

@@ -1,0 +1,148 @@
+## simple, pkg-manager agnostic, bash dependency checker/installer
+# `dappend {$1:pkg-manager} {$2... : dependency(s)}`
+dappend() { [[ ! -x $(which "$1" 2>/dev/null) ]] || return 2 ; for ((a=2;a<=$#;a++)); do [[ ! -x $(which "${!a}" 2>/dev/null) ]] || { sudo $1 install "${!a}" 1>&2 >/dev/null || return 1 ; } ; done ; }
+
+## directory bookmarks
+#Bin="$(realpath $HOME/bin)"
+#Desktop="$(realpath $HOME/Desktop)"
+#Documents="$(realpath $HOME/Documents)"
+#Downloads="$(realpath $HOME/Downloads)"
+#Music="$(realpath $HOME/Music)"
+#Pictures="$(realpath $HOME/Pictures)"
+#Projects="$(realpath $HOME/Projects)"
+#Public="$(realpath $HOME/Public)"
+#Templates="$(realpath $HOME/Templates)"
+#Videos="$(realpath $HOME/Videos)"
+# the following function allows for direct traversal into subdirectories, for example: `Pictures Dank-Memes/NSFW` 
+#chgDir() { cd ${!1}/${@:2} ; }
+# yeah the use of pointers is probably excessive but whatevs, they're there...
+#for _ in {b,B}in {d,D}esktop {d,D}ocuments {d,D}ownloads {m,M}usic {p,P}ictures {p,P}rojects {p,P}ublic {t,T}emplates {v,V}ideos ; do alias $_="chgDir ${_^}" ; done
+
+## `apt` pkgMgmt:
+# apts() { ! dappend apt-get fzf >/dev/null || apt-cache search ${@} 2>/dev/null | fzf -m --reverse ; }
+[[ ! -x $(which apt) ]] || {
+	alias apti='sudo apt-get install'
+	alias aptli='apt list --installed 2>/dev/null'
+	alias aptlu='apt list --upgradable 2>/dev/null'
+	alias aptsh='apt show'
+	alias aptca='apt-cache'
+	alias aptcash='apt-cache show'
+	alias aptr='sudo apt remove'
+	alias aptar='sudo apt autoremove'
+	alias aptu{pd,d}='sudo apt update'
+	alias aptu{pg,g}='sudo apt upgrade'
+	alias aptu{p,u}='sudo apt update && sudo apt upgrade'
+	alias aptdu='sudo apt dist-upgrade full-upgrade'
+}
+
+## `snap` pkgMgmt:
+[[ ! -x $(which snap) ]] || {
+	alias snapi='sudo snap install'
+	alias snapic='sudo snap install --classic'
+	alias snapl='snap list --color=always --unicode=always'
+	alias snapr='sudo snap remove'
+	#alias snaps='snap search'
+	alias snapu='sudo snap refresh'
+}
+
+## `pip` pkgMgmt:
+[[ ! -x ${PIYUP:=$(which pip||which pip3||echo "/usr/bin/python3-pip")} ]] || {
+	alias pips="$PIYUP search"
+	alias pipi="$PIYUP install"
+	alias pipup="$PIYUP install --upgrade pip"
+	alias pip{I,iu}="$PIYUP install --upgrade --user"
+}
+
+## `date` shorthand
+alias d8="date '+%Y%m%d'"
+alias dt="date '+%Y%m%d%H%M%S'"
+alias day="date '+%^a'"
+alias dayt="date '+%Y%m%d%^a'"
+alias DT="date '+%Y%m%d%^a%H%M%S'"
+
+## misc
+nil='/dev/null'
+alias hush="2>$nil"
+alias suod='sudo'
+alias push='pushd -n'
+alias pop='popd -n'
+alias rga='rg --hidden -l -F'
+alias portstat='ss -lntup'
+[[ ! -x ${Subl:=$(which subl)} ]] || alias subl="$Subl --launch-or-new-window"
+[[ ! -x $(which cmatrix) ]] || alias cmatrix='tput clear;cmatrix -abs -u 9 | lolcat -t -p 18;tput reset'
+
+## get dimensions of working-terminal
+[[ ! -x ${TermSize:=$(which getSize 2>/dev/null)} ]] && {
+	alias height='stty size | cut -d\  -f1'
+	alias width='stty size | cut -d\  -f2'
+} || {
+	alias height="$TermSize y"
+	alias width="$TermSize x"
+}
+
+## LAN Stuff
+[ ! -f ~/.ssh/.lan_aliases ] || source ~/.ssh/.lan_aliases
+# export AUDz=/home/me/Music/Audio
+# export VIDz=/home/me/Videos/Parsnipz
+#
+#[[ -z ${nc:-${NC:-}} ]] || alias NC="ssh ${nc:-${NC}}"
+
+## Get external (public) IP Address
+#wget 2>/dev/null ; [ $? != 1 ] || alias pubIP='wget --https-only -qO - https://icanhazip.com'
+! dappend apt-get wget || alias pubIP='wget --https-only -qO - https://icanhazip.com'
+
+## check the used space (%) on the underlying disk of an optionally specified PATH  (default is ./ )
+Used() { df ${1:-${PWD:-$(pwd)}} | awk '/^Filesystem/{ next; }; {print $5}' ; }
+alias used='Used'
+## fail if used disk space (%) is over an optionally specified limit  (default is 90% )
+Savior() { (( $(Used "${1}" | tr -d \%) < ${2:-90} )); }
+alias savior='Savior'
+
+## restrict file names
+restrictfn() { : "${*%\.*}" ; : "${_//[[:space:][:punct:]]/\_}" ; echo "${_//+(\_)/\_}.${@##*\.}" ; }
+alias rfn='restrictfn'
+
+## strike-through text
+strike() { while read line ; do printf "\e[9m%s\e[m\n" "${line}" ; done < <([ -t 0 ] ||  cat - ; for ((a=1;a<=$#;a++)); do echo "${!a}" ; done ) ; }
+
+## cleanly numbered `ls`
+lsn() { local -i i=0 && for _ in $* ; do echo "$((++i)) ${_##*\/}" ; done ; }
+
+## dfc -> HOME/bin/gdf
+[[ ! -x $(which gdf) ]] || alias dfc='gdf'
+
+## sleep, randomly
+#narcolepsy() { local i=${1:-1} ; sleep $(($(shuf -i 1-9 -n 1)*i)) ; }
+
+## scp wrapper.  basic path checking stuff. does not inhibit your ability to interact with scp (ie: flags and w/e else still make it through)
+#[[ ! -x $(which scp) ]] || { scp() { local Argz If Of ; for ((a=1;a<=$#;a++)) ; do case "${!a}" in \-[\-a-zA-Z]*) Argz[0]+="${!a} " ; [[ "${!a}" == *\=* ]] || { ((++a)) ; Argz[0]+="${!a/*\=/} " ; } ;; *\@*\:*) [[ -z "$If" ]] && If="${!a}" || Of="${!a}" ;; *) [[ ! -e "${!a}" && ! -d "${!a%\/*}" ]] && Argz[0]+="${!a} " || { [[ -z "$If" ]] && If="${!a}" || Of="${!a}" ; } ; esac ; done ; scp $Argz "$If" "${Of:-$PWD/}" ; } ; }
+
+## calculate a price to include 6% sales tax
+# afterTax() { echo "scale=2; (${@//[!0-9\.]/} * .06) + ${@//[!0-9\.]/}" | bc -l ; }
+# alias price='afterTax'
+
+## pos[itional]: a quick-n-dirty pipe-joined sortof `cut`.   Example > `echo {one,two,three} | pos 3 four five`  (: three)
+# pos() { _() { : "$(($1+1))" ; echo "${!_}" ; } ; [ -t 0 ] || { _ $1 $(cat - ) ${@:2} ; return $? ; } ; _ ${@} ; }
+
+## url formatting
+#[[ ! -x $(which url) ]] || {
+#	alias urlencode='url encode'
+#	alias urldecode='url decode'
+#}
+# I modified the `url` script to be callable with symlinks for `urlencode`/`urldecode`.
+# This avoids the need for aliases, but mostly just struck me as a neat way to achieve something similar.
+
+#alias Time="/usr/bin/time --format='%e + %U + %S'"
+#alias Timem="/usr/bin/time --format='%e + %U + %S + %K'"
+
+#[[ ! -f ~/.other_aliases ]] || . ~/.other_aliases
+
+#[[ ! -x $(which teau) ]] || alias tee='teau'
+
+[[ ! -x $(which interactive) ]] || alias idart='interactive'
+alias fluntr='rm -rf build ; flutter run --flavor user -t lib/main_user.dart -d emulator-5554'
+
+[[ ! -x ~/Android/Sdk/emulator/emulator ]] || alias emulator='~/Android/Sdk/emulator/emulator'
+#no: google-android-emulator-installer
+#yes: '~/Android/Sdk/emulator/emulator -list-avds'
+#yes: '~/Android/Sdk/emulator/emulator -avd Pixel_3a_API_34_extension_level_7_x86_64'
